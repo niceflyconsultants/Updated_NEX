@@ -1,0 +1,1349 @@
+/*================================================
+        LARGE LAPTOP (1200px)
+================================================*/
+
+@media (max-width:1200px){
+
+.container{
+    max-width:1140px;
+}
+
+section{
+    overflow:hidden;
+}
+
+.section-heading{
+    margin-bottom:55px;
+}
+
+.section-heading h2{
+    font-size:48px;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.nav-menu{
+    gap:25px;
+}
+
+.nav-menu a{
+    font-size:15px;
+}
+
+.logo img{
+    max-width:95px;
+}
+
+.track-btn{
+    padding:12px 22px;
+    font-size:15px;
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero-content{
+    max-width:620px;
+}
+
+.hero-content h1{
+    font-size:56px;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.hero-social{
+    left:20px;
+}
+
+.hero-navigation{
+    right:20px;
+}
+
+/*==========================
+ABOUT
+==========================*/
+
+.about-wrapper{
+    gap:60px;
+}
+
+.section-title{
+    font-size:52px;
+}
+
+.image-one{
+    width:240px;
+    height:500px;
+}
+
+.image-two{
+    width:220px;
+    height:420px;
+}
+
+/*==========================
+FEATURES
+==========================*/
+
+.features-wrapper{
+    gap:25px;
+}
+
+.feature-card{
+    padding:40px 30px;
+}
+
+.feature-content h3{
+    font-size:24px;
+}
+
+/*==========================
+SHOWCASE
+==========================*/
+
+.showcase-controls{
+    right:40px;
+    bottom:40px;
+}
+
+/*==========================
+CTA
+==========================*/
+
+.cta-left h2{
+    font-size:58px;
+}
+
+/*==========================
+SERVICES
+==========================*/
+
+.services-slider{
+    min-height:650px;
+}
+
+.service-item{
+    grid-template-columns:420px 1fr;
+}
+
+.service-content{
+    padding:40px;
+}
+
+.service-content h3{
+    font-size:28px;
+}
+
+/*==========================
+FAQ
+==========================*/
+
+.faq-wrapper{
+    grid-template-columns:420px 1fr;
+    gap:60px;
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+.footer-wrapper{
+    gap:40px;
+}
+
+}
+
+/*================================================
+        TABLET (991px)
+================================================*/
+
+@media (max-width:991px){
+
+/*==========================
+COMMON
+==========================*/
+
+section{
+    padding:90px 0;
+}
+
+.container{
+    max-width:960px;
+}
+
+.section-heading{
+    margin-bottom:45px;
+}
+
+.section-heading h2{
+    font-size:42px;
+}
+
+.section-heading p{
+    font-size:17px;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.header{
+    padding:15px 0;
+}
+
+.logo img{
+    max-width:90px;
+}
+
+.menu-toggle{
+    display:flex;
+    z-index:1002;
+}
+
+.header-right{
+    display:none;
+}
+
+.nav-menu{
+
+    position:fixed;
+
+    top:0;
+    right:-100%;
+
+    width:320px;
+    height:100vh;
+
+    background:#0d0d0d;
+
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+
+    padding:40px;
+
+    gap:25px;
+
+    transition:.45s;
+
+    z-index:1000;
+}
+
+.nav-menu.active{
+    right:0;
+}
+
+.nav-menu li{
+    width:100%;
+}
+
+.nav-menu li a{
+    width:100%;
+    font-size:18px;
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+    min-height:900px;
+}
+
+.hero-wrapper{
+    justify-content:center;
+}
+
+.hero-content{
+    max-width:700px;
+    text-align:center;
+    align-items:center;
+    margin:auto;
+}
+
+.hero-content h1{
+    font-size:52px;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.hero-social,
+.hero-navigation{
+    display:none;
+}
+
+/*==========================
+TOP INFO BAR
+==========================*/
+
+.info-bar-wrapper{
+    flex-direction:column;
+    padding:20px;
+    gap:15px;
+}
+
+.info-left,
+.info-center,
+.info-right{
+    width:100%;
+    justify-content:center;
+    padding:0;
+}
+
+.info-left::after{
+    display:none;
+}
+
+/*==========================
+ABOUT
+==========================*/
+
+.about-wrapper{
+    flex-direction:column;
+    gap:50px;
+}
+
+.about-content,
+.about-images{
+    flex:0 0 100%;
+}
+
+.about-content{
+    text-align:center;
+}
+
+.about-images{
+    justify-content:center;
+}
+
+/*==========================
+FEATURES
+==========================*/
+
+.features-wrapper{
+    grid-template-columns:1fr;
+}
+
+/*==========================
+SHOWCASE
+==========================*/
+
+.showcase-section{
+    height:500px;
+}
+
+.showcase-controls{
+    right:20px;
+    bottom:20px;
+}
+
+/*==========================
+CTA
+==========================*/
+
+.cta-wrapper{
+    flex-direction:column;
+    text-align:center;
+}
+
+.cta-left,
+.cta-right{
+    flex:0 0 100%;
+}
+
+.cta-left h2{
+    font-size:48px;
+}
+
+/*================================================
+        SERVICES TABLET
+================================================*/
+
+@media (max-width:991px){
+
+.services-section{
+    padding:90px 0;
+}
+
+.services-section .section-heading{
+    margin-bottom:45px;
+}
+
+.service-tabs{
+    gap:12px;
+    margin-bottom:40px;
+}
+
+.service-tab{
+    padding:12px 20px;
+    font-size:15px;
+}
+
+.services-slider{
+    min-height:920px;
+}
+
+.service-item{
+
+    position:absolute;
+
+    grid-template-columns:1fr;
+
+}
+
+.service-image{
+
+    order:1;
+    height:350px;
+
+}
+
+.service-content{
+
+    order:2;
+
+    padding:40px;
+
+}
+
+.service-content::before{
+
+    display:none;
+
+}
+
+.services-contact{
+
+    border-radius:25px;
+
+}
+
+}
+
+/*==========================
+INDUSTRIES
+==========================*/
+
+.industry-tags{
+    gap:15px;
+}
+
+.industry-tag{
+    padding:14px 22px;
+}
+
+/*==========================
+COUNTERS
+==========================*/
+
+.counter-wrapper{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/*==========================
+MESSAGE
+==========================*/
+
+.message-section{
+    height:auto;
+}
+
+.message-section .container{
+    justify-content:center;
+    padding:90px 15px;
+}
+
+.message-wrapper{
+    justify-content:center;
+}
+
+.message-content{
+    width:100%;
+}
+
+/*==========================
+FAQ
+==========================*/
+
+.faq-wrapper{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.faq-images{
+    max-width:650px;
+    margin:auto;
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+.footer-wrapper{
+    grid-template-columns:repeat(2,1fr);
+    gap:45px;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
+/*================================================
+        MOBILE (768px)
+================================================*/
+
+@media (max-width:768px){
+
+/*==========================
+COMMON
+==========================*/
+
+section{
+    padding:70px 0;
+}
+
+.container{
+    padding:0 20px;
+}
+
+.section-heading{
+    margin-bottom:35px;
+}
+
+.section-heading h2{
+    font-size:34px;
+    line-height:1.25;
+}
+
+.section-heading p{
+    font-size:16px;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.logo img{
+    max-width:80px;
+}
+
+.nav-menu{
+    width:100%;
+    padding:35px 30px;
+}
+
+.nav-menu li a{
+    font-size:17px;
+}
+
+.menu-toggle{
+    width:46px;
+    height:46px;
+    font-size:18px;
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+    min-height:760px;
+}
+
+.hero-content h1{
+    font-size:38px;
+    line-height:1.2;
+}
+
+.hero-content p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.hero-tag{
+    font-size:12px;
+    padding:8px 16px;
+}
+
+.hero-btn{
+    padding:14px 24px;
+    font-size:15px;
+}
+
+.hero-pagination{
+    bottom:25px;
+}
+
+.hero-dot{
+    width:10px;
+    height:10px;
+}
+
+.hero-dot.active{
+    width:34px;
+}
+
+/*==========================
+TOP INFO
+==========================*/
+
+.top-info-bar{
+    margin-top:0;
+}
+
+.info-bar-wrapper{
+    min-height:auto;
+    padding:18px;
+}
+
+.info-left,
+.info-center,
+.info-right{
+    text-align:center;
+}
+
+/*==========================
+ABOUT
+==========================*/
+
+.section-title{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.about-images{
+    flex-direction:column;
+    gap:20px;
+}
+
+.image-one,
+.image-two{
+    width:100%;
+    max-width:340px;
+    height:auto;
+    margin-top:0;
+}
+
+/*==========================
+FEATURES
+==========================*/
+
+.feature-card{
+    padding:35px 25px;
+}
+
+.feature-icon{
+    width:75px;
+    height:75px;
+}
+
+.feature-icon i{
+    font-size:34px;
+}
+
+.feature-content h3{
+    font-size:22px;
+}
+
+/*==========================
+SHOWCASE
+==========================*/
+
+.showcase-section{
+    height:350px;
+}
+
+.showcase-slide{
+    border-radius:50px 0 0 0;
+}
+
+.showcase-controls{
+    right:15px;
+    bottom:15px;
+    padding:10px 14px;
+    gap:10px;
+}
+
+.showcase-btn{
+    width:42px;
+    height:42px;
+    font-size:15px;
+}
+
+/*==========================
+CTA
+==========================*/
+
+.cta-section{
+    padding:80px 0;
+}
+
+.cta-left h2{
+    font-size:36px;
+}
+
+.cta-right p{
+    font-size:16px;
+}
+
+/*================================================
+        SERVICES MOBILE
+================================================*/
+
+@media (max-width:768px){
+
+.services-section{
+
+    padding:70px 0;
+
+}
+
+.services-section::before,
+.services-section::after{
+
+    display:none;
+
+}
+
+.service-tabs{
+
+    flex-direction:column;
+
+    gap:12px;
+
+    margin-bottom:35px;
+
+}
+
+.service-tab{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:14px 20px;
+
+    font-size:15px;
+
+}
+
+.services-slider{
+
+    min-height:auto;
+
+}
+
+.service-item{
+
+    position:relative;
+
+    inset:auto;
+
+    grid-template-columns:1fr;
+
+    border-radius:25px;
+
+    transform:none;
+
+}
+
+.service-item:not(.active){
+
+    display:none;
+
+}
+
+.service-item.active{
+
+    display:grid;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.service-image{
+
+    height:250px;
+
+}
+
+.service-image img{
+
+    transform:none !important;
+
+}
+
+.service-content{
+
+    padding:30px 25px;
+
+}
+
+.service-icon{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+.service-icon i{
+
+    font-size:26px;
+
+}
+
+.service-content h3{
+
+    font-size:24px;
+
+}
+
+.service-content p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+.service-content li{
+
+    font-size:15px;
+
+    margin-bottom:14px;
+
+}
+
+.service-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.services-contact{
+
+    padding:20px;
+
+    border-radius:20px;
+
+}
+
+.services-contact p{
+
+    text-align:center;
+
+    flex-direction:column;
+
+}
+
+}
+
+/*==========================
+INDUSTRIES
+==========================*/
+
+.industry-tags{
+    gap:12px;
+}
+
+.industry-tag{
+    width:100%;
+    justify-content:center;
+    padding:15px;
+}
+
+/*==========================
+COUNTERS
+==========================*/
+
+.counter-wrapper{
+    grid-template-columns:1fr;
+}
+
+.counter-box{
+    text-align:center;
+}
+
+.counter-box h2{
+    font-size:52px;
+}
+
+/*==========================
+MESSAGE
+==========================*/
+
+.message-content{
+    padding:35px 25px;
+}
+
+.message-content p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+/*==========================
+FAQ
+==========================*/
+
+.faq-question{
+    padding:22px;
+    font-size:17px;
+}
+
+.faq-answer p{
+    padding:0 22px 22px;
+}
+
+.faq-image-small{
+    display:none;
+}
+
+/*==========================
+PARTNERS
+==========================*/
+
+.partners-slider{
+    gap:35px;
+}
+
+.partner-item img{
+    max-height:35px;
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+.footer{
+    padding-top:80px;
+}
+
+.footer-wrapper{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.footer-links h4{
+    font-size:22px;
+}
+
+.contact-box{
+    margin-bottom:25px;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding:25px 0;
+    text-align:center;
+}
+
+.scroll-progress{
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+}
+
+.scroll-top-btn{
+    width:46px;
+    height:46px;
+}
+
+}
+/*================================================
+        SMALL MOBILE (576px)
+================================================*/
+
+@media (max-width:576px){
+
+/*==========================
+COMMON
+==========================*/
+
+.container{
+    padding:0 15px;
+}
+
+section{
+    padding:60px 0;
+}
+
+.section-heading{
+    margin-bottom:30px;
+}
+
+.section-heading h2{
+    font-size:28px;
+    line-height:1.3;
+}
+
+.section-heading p{
+    font-size:15px;
+    line-height:1.8;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.header{
+    padding:12px 0;
+}
+
+.logo img{
+    max-width:70px;
+}
+
+.menu-toggle{
+    width:42px;
+    height:42px;
+    font-size:16px;
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+    min-height:700px;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.hero-tag{
+    font-size:11px;
+    padding:7px 14px;
+    margin-bottom:18px;
+}
+
+.hero-content h1{
+    font-size:30px;
+    line-height:1.25;
+    margin-bottom:18px;
+}
+
+.hero-content p{
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.hero-btn{
+    width:100%;
+    justify-content:center;
+    padding:14px 20px;
+    font-size:15px;
+}
+
+.hero-btn i{
+    width:36px;
+    height:36px;
+}
+
+.hero-pagination{
+    bottom:20px;
+}
+
+.hero-dot{
+    width:9px;
+    height:9px;
+}
+
+.hero-dot.active{
+    width:28px;
+}
+
+/*==========================
+TOP INFO
+==========================*/
+
+.info-left,
+.info-center,
+.info-right{
+    font-size:14px;
+}
+
+.info-center a,
+.info-right a{
+    gap:8px;
+}
+
+/*==========================
+ABOUT
+==========================*/
+
+.section-title{
+    font-size:30px;
+}
+
+.section-tag{
+    padding:10px 18px;
+    font-size:13px;
+}
+
+.about-btn{
+    width:100%;
+    justify-content:center;
+}
+
+/*==========================
+FEATURES
+==========================*/
+
+.feature-card{
+    padding:28px 20px;
+}
+
+.feature-icon{
+    width:65px;
+    height:65px;
+}
+
+.feature-icon i{
+    font-size:28px;
+}
+
+.feature-content h3{
+    font-size:20px;
+}
+
+.feature-content p{
+    font-size:15px;
+}
+
+/*==========================
+SHOWCASE
+==========================*/
+
+.showcase-section{
+    height:280px;
+}
+
+.showcase-slide{
+    border-radius:35px 0 0 0;
+}
+
+.showcase-controls{
+    right:10px;
+    bottom:10px;
+    padding:8px 10px;
+}
+
+.showcase-btn{
+    width:38px;
+    height:38px;
+    font-size:14px;
+}
+
+.showcase-counter{
+    font-size:15px;
+}
+
+/*==========================
+CTA
+==========================*/
+
+.cta-left h2{
+    font-size:30px;
+}
+
+.cta-right p{
+    font-size:15px;
+}
+
+.cta-btn{
+    width:100%;
+    justify-content:center;
+}
+
+/*==========================
+SERVICES
+==========================*/
+
+.service-tab{
+    font-size:14px;
+    padding:12px 18px;
+}
+
+.service-content{
+    padding:25px 20px;
+}
+
+.service-icon{
+    width:55px;
+    height:55px;
+}
+
+.service-icon i{
+    font-size:24px;
+}
+
+.service-content h3{
+    font-size:22px;
+}
+
+.service-content li{
+    font-size:14px;
+    margin-bottom:14px;
+}
+
+.service-btn{
+    width:100%;
+    justify-content:center;
+}
+
+.service-image{
+    height:220px;
+}
+
+/*==========================
+INDUSTRIES
+==========================*/
+
+.industry-tag{
+    font-size:14px;
+    gap:10px;
+}
+
+/*==========================
+COUNTERS
+==========================*/
+
+.counter-box{
+    padding:35px 20px;
+}
+
+.counter-box h2{
+    font-size:42px;
+}
+
+.counter-box span{
+    font-size:24px;
+}
+
+/*==========================
+MESSAGE
+==========================*/
+
+.message-content{
+    padding:28px 20px;
+}
+
+.message-content::after{
+    display:none;
+}
+
+.message-content p{
+    font-size:15px;
+}
+
+.author-image{
+    width:60px;
+    height:60px;
+}
+
+.author-info h5{
+    font-size:18px;
+}
+
+/*==========================
+FAQ
+==========================*/
+
+.faq-question{
+    padding:18px;
+    font-size:16px;
+}
+
+.faq-question i{
+    width:36px;
+    height:36px;
+}
+
+.faq-answer p{
+    padding:0 18px 18px;
+    font-size:15px;
+}
+
+/*==========================
+PARTNERS
+==========================*/
+
+.partner-item img{
+    max-height:28px;
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+.footer{
+    padding-top:60px;
+}
+
+.footer-logo img{
+    max-width:150px;
+}
+
+.footer-social{
+    justify-content:center;
+}
+
+.contact-box{
+    gap:12px;
+}
+
+.contact-box i{
+    width:45px;
+    height:45px;
+}
+
+.footer-bottom{
+    margin-top:40px;
+}
+
+.footer-bottom p{
+    font-size:14px;
+}
+
+.developer-credit{
+    text-align:center;
+}
+
+/*==========================
+SCROLL BUTTON
+==========================*/
+
+.scroll-progress{
+    right:15px;
+    bottom:15px;
+    width:55px;
+    height:55px;
+}
+
+.scroll-top-btn{
+    width:42px;
+    height:42px;
+    font-size:15px;
+}
+
+}

@@ -1565,11 +1565,8 @@ scrollReveal(){
          .service-item,\
          .industry-tag,\
          .team-card,\
-         .counter-box,\
          .message-content,\
-         .news-card,\
-         .faq-item,\
-         .partner-item"
+         .news-card"
 
     );
 

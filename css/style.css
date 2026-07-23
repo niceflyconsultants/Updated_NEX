@@ -128,7 +128,7 @@ p{
 
 .container{
 
-    width:100%;
+    width:90%;
     max-width:var(--container);
     margin:auto;
     padding:0 15px;
@@ -1002,8 +1002,8 @@ TEXT
 .hero{
     position:relative;
     width:100%;
-    height:100vh;
-    min-height:100vh;
+height:100svh;
+min-height:100svh;
     overflow:hidden;
     background:#081322;
 }
@@ -1013,9 +1013,11 @@ TEXT
 ================================================*/
 
 .hero-slider{
-    position:relative;
-    width:100%;
+ position:absolute;
+    inset:0;
+        width:100%;
     height:100%;
+     z-index:1;
 }
 
 /*================================================
@@ -1048,19 +1050,15 @@ TEXT
 
     transform-style:preserve-3d;
 
-    z-index:1;
 
 }
 
 .hero-slide.active{
 
-    opacity:1;
-
+opacity:1;
     pointer-events:auto;
-
     transform:scale(1);
-
-    z-index:3;
+    z-index:1;   
 
 }
 
@@ -1070,19 +1068,12 @@ TEXT
 
 .hero-bg{
 
-    position:absolute;
+position:absolute;
     inset:0;
-
     overflow:hidden;
-    z-index: 1;
-
 }
 
 .hero-bg img{
-
-    position:absolute;
-    inset:0;
-
     width:100%;
     height:100%;
 
@@ -1103,25 +1094,19 @@ TEXT
     transform:scale(1.12);
 
 }
-
-/*================================================
-                OVERLAY
-================================================*/
-
-.hero-overlay{
-
+/* Background Overlay */
+.hero-bg::after{
+    content:"";
     position:absolute;
     inset:0;
     background:linear-gradient(
         90deg,
-        rgba(6,17,35,.82) 0%,
-        rgba(6,17,35,.60) 40%,
-        rgba(6,17,35,.30) 70%,
-        rgba(6,17,35,.10) 100%
+        rgba(5,16,36,.82) 0%,
+        rgba(5,16,36,.65) 40%,
+        rgba(5,16,36,.45) 70%,
+        rgba(5,16,36,.30) 100%
     );
-    z-index:2;
-
-
+    z-index:1;
 }
 
 /*================================================
@@ -1130,21 +1115,20 @@ TEXT
 
 .hero .container{
 
-    position:relative;
-
-    z-index:3;
-
+position: relative;   
     height:100%;
 
     display:flex;
 
     align-items:center;
+    
 
 }
 
 .hero-wrapper{
-
-    width:100%;
+position:relative;
+    z-index:3;
+        width:100%;
     min-height:100vh;
 
     display:flex;
@@ -1154,14 +1138,13 @@ TEXT
 }
 
 .hero-content{
-
-    max-width:700px;
+position:relative;
+    z-index:3;
+        max-width:700px;
     text-align:center;
     align-items:center;
-
     display:flex;
     flex-direction:column;
-
 }
 /*================================================
                 TAG
@@ -1179,7 +1162,7 @@ TEXT
 
     border-radius:999px;
 
-    color:#fff;
+    color:white;
 
     font-size:14px;
 
@@ -1203,7 +1186,7 @@ TEXT
 
 .hero-content h1{
 
-    color:#fff;
+    color:white;
 
     font-size:40px;
 
@@ -1225,7 +1208,7 @@ TEXT
 
     max-width:620px;
 
-    color:rgba(255,255,255,.82);
+    color:white;
 
     font-size:20px;
 
@@ -1253,7 +1236,7 @@ TEXT
 
     background:var(--primary-color);
 
-    color:#fff;
+    color:white;
 
     font-weight:600;
 
@@ -1337,7 +1320,7 @@ TEXT
 
     backdrop-filter:blur(10px);
 
-    transition:1s;
+    transition:.4s;
 
 }
 
@@ -1392,7 +1375,7 @@ TEXT
 
     backdrop-filter:blur(10px);
 
-    transition:1s;
+    transition:.4s;
 
 }
 
@@ -2317,7 +2300,7 @@ TEXT
 
     width: 100%;
 
-    min-height: 70vh;
+    min-height: 80vh;
 
 }
 
@@ -2337,7 +2320,7 @@ TEXT
     height:100%;
 
     overflow:hidden;
-        border-radius:120px 0 0 0;
+        border-radius:180px 0 0 0;
 
 
     transform:translateX(100%);
@@ -2853,7 +2836,7 @@ TEXT
 
 .services-slider{
     position:relative;
-    min-height:80vh;
+    min-height:70vh;
 }
 
 .service-item{
@@ -2861,7 +2844,7 @@ TEXT
     inset:0;
 
     display:grid;
-    grid-template-columns:520px 1fr;
+    grid-template-columns:400px 1fr;
     align-items:center;
 
     background:#f8f9fc;
@@ -3110,7 +3093,7 @@ TEXT
 
     z-index: 2;
 
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 
 }
 
@@ -3224,7 +3207,7 @@ TEXT
 
     align-items: flex-end;
 
-    margin-top: 40px;
+    margin-top: 20px;
 
 }
 
@@ -3922,7 +3905,7 @@ TEXT
 
     font-size:18px;
 
-    font-weight:600;
+    font-weight:500;
 
     text-align:left;
 
@@ -3936,9 +3919,9 @@ TEXT
 
 .faq-question i{
 
-    width:42px;
+    width:45px;
 
-    height:42px;
+    height:45px;
 
     border-radius:50%;
 
@@ -3985,7 +3968,7 @@ TEXT
 
     color:#666;
 
-    line-height:1.9;
+    line-height:1.6;
 
 }
 
@@ -4030,9 +4013,9 @@ TEXT
 
 .faq-footer a i{
 
-    width:40px;
+    width:45px;
 
-    height:40px;
+    height:45px;
 
     border-radius:50%;
 
@@ -4510,5 +4493,69 @@ TEXT
     opacity:1;
 
     transform:translateY(0);
+
+}
+
+
+/*====================================
+        TRUCK LOOP
+=====================================*/
+
+.truck-loop{
+
+    position:relative;
+    width:100%;
+    height:140px;
+    overflow:hidden;
+    margin:60px 0;
+
+}
+
+.truck{
+
+    position:absolute;
+    bottom:0;                 /* Same height for all trucks */
+    left:-350px;
+    width:220px;
+    animation:truckLoop linear infinite;
+
+}
+
+/* Individual trucks */
+
+.truck-1{
+    animation-duration:18s;
+    animation-delay:0s;
+}
+
+.truck-2{
+    animation-duration:18s;
+    animation-delay:3.5s;
+}
+
+.truck-3{
+    animation-duration:18s;
+    animation-delay:7s;
+}
+
+.truck-4{
+    animation-duration:18s;
+    animation-delay:10.5s;
+}
+
+.truck-5{
+    animation-duration:18s;
+    animation-delay:14s;
+}
+
+@keyframes truckLoop{
+
+    from{
+        transform:translateX(-350px);
+    }
+
+    to{
+        transform:translateX(calc(100vw + 500px));
+    }
 
 }

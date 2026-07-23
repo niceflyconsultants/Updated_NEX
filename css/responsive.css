@@ -1,164 +1,3 @@
-/*================================================
-        LARGE LAPTOP (1200px)
-================================================*/
-
-@media (max-width:1200px){
-
-.container{
-    max-width:1140px;
-}
-
-section{
-    overflow:hidden;
-}
-
-.section-heading{
-    margin-bottom:55px;
-}
-
-.section-heading h2{
-    font-size:48px;
-}
-
-/*==========================
-HEADER
-==========================*/
-
-.nav-menu{
-    gap:25px;
-}
-
-.nav-menu a{
-    font-size:15px;
-}
-
-.logo img{
-    max-width:95px;
-}
-
-.track-btn{
-    padding:12px 22px;
-    font-size:15px;
-}
-
-/*==========================
-HERO
-==========================*/
-
-.hero-content{
-    max-width:620px;
-}
-
-.hero-content h1{
-    font-size:56px;
-}
-
-.hero-content p{
-    font-size:18px;
-    line-height:1.8;
-}
-
-.hero-social{
-    left:20px;
-}
-
-.hero-navigation{
-    right:20px;
-}
-
-/*==========================
-ABOUT
-==========================*/
-
-.about-wrapper{
-    gap:60px;
-}
-
-.section-title{
-    font-size:52px;
-}
-
-.image-one{
-    width:240px;
-    height:500px;
-}
-
-.image-two{
-    width:220px;
-    height:420px;
-}
-
-/*==========================
-FEATURES
-==========================*/
-
-.features-wrapper{
-    gap:25px;
-}
-
-.feature-card{
-    padding:40px 30px;
-}
-
-.feature-content h3{
-    font-size:24px;
-}
-
-/*==========================
-SHOWCASE
-==========================*/
-
-.showcase-controls{
-    right:40px;
-    bottom:40px;
-}
-
-/*==========================
-CTA
-==========================*/
-
-.cta-left h2{
-    font-size:58px;
-}
-
-/*==========================
-SERVICES
-==========================*/
-
-.services-slider{
-    min-height:650px;
-}
-
-.service-item{
-    grid-template-columns:420px 1fr;
-}
-
-.service-content{
-    padding:40px;
-}
-
-.service-content h3{
-    font-size:28px;
-}
-
-/*==========================
-FAQ
-==========================*/
-
-.faq-wrapper{
-    grid-template-columns:420px 1fr;
-    gap:60px;
-}
-
-/*==========================
-FOOTER
-==========================*/
-
-.footer-wrapper{
-    gap:40px;
-}
-
-}
 
 /*================================================
         TABLET (991px)
@@ -175,7 +14,7 @@ section{
 }
 
 .container{
-    max-width:960px;
+    max-width:96%;
 }
 
 .section-heading{
@@ -253,13 +92,7 @@ HEADER
 HERO
 ==========================*/
 
-.hero{
-    min-height:900px;
-}
 
-.hero-wrapper{
-    justify-content:center;
-}
 
 .hero-content{
     max-width:700px;
@@ -720,6 +553,9 @@ CTA
 .service-tabs{
 
     flex-direction:column;
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+
 
     gap:12px;
 
@@ -1275,8 +1111,8 @@ FAQ
 }
 
 .faq-question i{
-    width:36px;
-    height:36px;
+    width:40px;
+    height:40px;
 }
 
 .faq-answer p{

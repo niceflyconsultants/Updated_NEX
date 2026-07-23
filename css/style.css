@@ -2286,10 +2286,12 @@ position:relative;
     position: relative;
 
     width: 100%;
+    min-height: auto;
 
     padding: 0;
 
     overflow: hidden;
+
 
 
 }
@@ -2299,8 +2301,9 @@ position:relative;
     position: relative;
 
     width: 100%;
+    min-height: 500px;
+    padding-bottom: 40px;
 
-    min-height: 80vh;
 
 }
 

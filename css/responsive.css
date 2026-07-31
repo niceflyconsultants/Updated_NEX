@@ -1,9 +1,57 @@
+/*====================================
+    1200px TYPOGRAPHY
+====================================*/
+
+@media (max-width:1200px){
+
+:root{
+
+    /* Hero */
+    --fs-display:58px;
+
+    /* Headings */
+    --fs-h1:50px;
+    --fs-h2:40px;
+    --fs-h3:30px;
+    --fs-h4:24px;
+    --fs-h5:21px;
+    --fs-h6:18px;
+
+    /* Text */
+    --fs-body:15px;
+    --fs-lead:18px;
+    --fs-small:15px;
+    --fs-xs:14px;
+
+}
+
+}
 
 /*================================================
         TABLET (991px)
 ================================================*/
 
-@media (max-width:991px){
+@media (max-width:1024px){
+    :root{
+
+    /* Hero */
+    --fs-display:48px;
+
+    /* Headings */
+    --fs-h1:40px;
+    --fs-h2:34px;
+    --fs-h3:26px;
+    --fs-h4:20px;
+    --fs-h5:28px;
+    --fs-h6:16px;
+
+    /* Text */
+    --fs-body:14px;
+    --fs-lead:15px;
+    --fs-small:12px;
+    --fs-xs:11px;
+
+}
 
 /*==========================
 COMMON
@@ -22,11 +70,11 @@ section{
 }
 
 .section-heading h2{
-    font-size:42px;
+    font-size:var(--fs-h1);
 }
 
 .section-heading p{
-    font-size:17px;
+    font-size:var(--fs-body);
 }
 
 /*==========================
@@ -85,14 +133,12 @@ HEADER
 
 .nav-menu li a{
     width:100%;
-    font-size:18px;
+    font-size:var(--fs-h5);
 }
 
 /*==========================
 HERO
 ==========================*/
-
-
 
 .hero-content{
     max-width:700px;
@@ -102,11 +148,11 @@ HERO
 }
 
 .hero-content h1{
-    font-size:52px;
+    font-size:var(--fs-display);
 }
 
 .hero-content p{
-    font-size:18px;
+    font-size:var(--fs-lead);
     line-height:1.8;
 }
 
@@ -173,7 +219,6 @@ SHOWCASE
 
 .showcase-section{
     height:500px;
-
 }
 
 .showcase-controls{
@@ -196,14 +241,12 @@ CTA
 }
 
 .cta-left h2{
-    font-size:48px;
+    font-size:var(--fs-display);
 }
 
 /*================================================
         SERVICES TABLET
 ================================================*/
-
-@media (max-width:991px){
 
 .services-section{
     padding:90px 0;
@@ -220,7 +263,7 @@ CTA
 
 .service-tab{
     padding:12px 20px;
-    font-size:15px;
+    font-size:var(--fs-small);
 }
 
 .services-slider{
@@ -259,8 +302,6 @@ CTA
 .services-contact{
 
     border-radius:25px;
-
-}
 
 }
 
@@ -334,11 +375,62 @@ FOOTER
 }
 
 }
+
+@media (max-width:991px){
+
+    .dropdown-menu{
+
+        position:static;
+
+        opacity:1;
+
+        visibility:visible;
+
+        transform:none;
+
+        box-shadow:none;
+
+        background:transparent;
+
+        padding:10px 0 0 20px;
+
+        display:none;
+
+    }
+
+    .has-dropdown.active .dropdown-menu{
+
+        display:block;
+
+    }
+
+}
+
 /*================================================
         MOBILE (768px)
 ================================================*/
 
 @media (max-width:768px){
+    :root{
+
+    /* Hero */
+    --fs-display:38px;
+
+    /* Headings */
+    --fs-h1:34px;
+    --fs-h2:30px;
+    --fs-h3:24px;
+    --fs-h4:20px;
+    --fs-h5:18px;
+    --fs-h6:16px;
+
+    /* Text */
+    --fs-body:12px;
+    --fs-lead:12px;
+    --fs-small:12px;
+    --fs-xs:12px;
+
+}
 
 /*==========================
 COMMON
@@ -357,12 +449,12 @@ section{
 }
 
 .section-heading h2{
-    font-size:34px;
+    font-size:var(--fs-h2);
     line-height:1.25;
 }
 
 .section-heading p{
-    font-size:16px;
+    font-size:var(--fs-body);
 }
 
 /*==========================
@@ -379,13 +471,13 @@ HEADER
 }
 
 .nav-menu li a{
-    font-size:17px;
+    font-size:var(--fs-body);
 }
 
 .menu-toggle{
     width:46px;
     height:46px;
-    font-size:18px;
+    font-size:var(--fs-h6);
 }
 
 /*==========================
@@ -397,23 +489,23 @@ HERO
 }
 
 .hero-content h1{
-    font-size:38px;
+    font-size:var(--fs-display);
     line-height:1.2;
 }
 
 .hero-content p{
-    font-size:16px;
+    font-size:var(--fs-body);
     line-height:1.8;
 }
 
 .hero-tag{
-    font-size:12px;
+    font-size:var(--fs-xs);
     padding:8px 16px;
 }
 
 .hero-btn{
     padding:14px 24px;
-    font-size:15px;
+    font-size:var(--fs-small);
 }
 
 .hero-pagination{
@@ -453,7 +545,7 @@ ABOUT
 ==========================*/
 
 .section-title{
-    font-size:36px;
+    font-size:var(--fs-h1);
     margin-bottom:30px;
 }
 
@@ -484,11 +576,11 @@ FEATURES
 }
 
 .feature-icon i{
-    font-size:34px;
+    font-size:var(--fs-h2);
 }
 
 .feature-content h3{
-    font-size:22px;
+    font-size:var(--fs-h4);
 }
 
 /*==========================
@@ -500,8 +592,8 @@ SHOWCASE
 }
 
 .showcase-slide{
-            border-radius:0 0 0 0;
-    height: 400px;
+    border-radius:0;
+    height:400px;
 }
 
 .showcase-controls{
@@ -514,7 +606,7 @@ SHOWCASE
 .showcase-btn{
     width:42px;
     height:42px;
-    font-size:15px;
+    font-size:var(--fs-small);
 }
 
 /*==========================
@@ -526,171 +618,110 @@ CTA
 }
 
 .cta-left h2{
-    font-size:36px;
+    font-size:var(--fs-h1);
 }
 
 .cta-right p{
-    font-size:16px;
+    font-size:var(--fs-body);
 }
 
 /*================================================
         SERVICES MOBILE
 ================================================*/
 
-@media (max-width:768px){
-
 .services-section{
-
     padding:70px 0;
-
 }
 
 .services-section::before,
 .services-section::after{
-
     display:none;
-
 }
 
 .service-tabs{
-
-    flex-direction:column;
-    display: grid;
-        grid-template-columns: 1fr 1fr;
-
-
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:12px;
-
     margin-bottom:35px;
-
 }
 
 .service-tab{
-
     width:100%;
-
     justify-content:center;
-
     padding:14px 20px;
-
-    font-size:12px;
-
+    font-size:var(--fs-xs);
 }
 
 .services-slider{
-
     min-height:auto;
-
 }
 
 .service-item{
-
     position:relative;
-
     inset:auto;
-
     grid-template-columns:1fr;
-
     border-radius:25px;
-
     transform:none;
-
 }
 
 .service-item:not(.active){
-
     display:none;
-
 }
 
 .service-item.active{
-
     display:grid;
-
     opacity:1;
-
     visibility:visible;
-
 }
 
 .service-image{
-
     height:250px;
-
 }
 
 .service-image img{
-
     transform:none !important;
-
 }
 
 .service-content{
-
     padding:30px 25px;
-
 }
 
 .service-icon{
-
     width:60px;
-
     height:60px;
-
 }
 
 .service-icon i{
-
-    font-size:26px;
-
+    font-size:var(--fs-h4);
 }
 
 .service-content h3{
-
-    font-size:24px;
-
+    font-size:var(--fs-h4);
 }
 
 .service-content p{
-
-    font-size:16px;
-
+    font-size:var(--fs-body);
     line-height:1.7;
-
 }
 
 .service-content li{
-
-    font-size:15px;
-
+    font-size:var(--fs-small);
     margin-bottom:14px;
-
 }
 
 .service-btn{
-
     width:100%;
-
     justify-content:center;
-
 }
 
 .services-contact{
-
     padding:20px;
-
     border-radius:20px;
-
 }
 
 .services-contact p{
-
     text-align:center;
-
     flex-direction:column;
-
-}
-
 }
 
 /*==========================
@@ -720,7 +751,7 @@ COUNTERS
 }
 
 .counter-box h2{
-    font-size:52px;
+    font-size:var(--fs-display);
 }
 
 /*==========================
@@ -732,7 +763,7 @@ MESSAGE
 }
 
 .message-content p{
-    font-size:16px;
+    font-size:var(--fs-body);
     line-height:1.8;
 }
 
@@ -742,7 +773,7 @@ FAQ
 
 .faq-question{
     padding:22px;
-    font-size:17px;
+    font-size:var(--fs-body);
 }
 
 .faq-answer p{
@@ -779,7 +810,7 @@ FOOTER
 }
 
 .footer-links h4{
-    font-size:22px;
+    font-size:var(--fs-h4);
 }
 
 .contact-box{
@@ -805,18 +836,36 @@ FOOTER
 }
 
 .truck{
-
     width:200px;
+}
 
 }
 
-
-}
 /*================================================
         SMALL MOBILE (576px)
 ================================================*/
 
 @media (max-width:576px){
+    :root{
+
+    /* Hero */
+    --fs-display:30px;
+
+    /* Headings */
+    --fs-h1:28px;
+    --fs-h2:26px;
+    --fs-h3:22px;
+    --fs-h4:18px;
+    --fs-h5:17px;
+    --fs-h6:15px;
+
+    /* Text */
+    --fs-body:12px;
+    --fs-lead:12px;
+    --fs-small:11px;
+    --fs-xs:10px;
+
+}
 
 /*==========================
 COMMON
@@ -835,12 +884,12 @@ section{
 }
 
 .section-heading h2{
-    font-size:28px;
+    font-size:var(--fs-h2);
     line-height:1.3;
 }
 
 .section-heading p{
-    font-size:15px;
+    font-size:var(--fs-body);
     line-height:1.8;
 }
 
@@ -859,7 +908,7 @@ HEADER
 .menu-toggle{
     width:42px;
     height:42px;
-    font-size:16px;
+    font-size:var(--fs-h6);
 }
 
 /*==========================
@@ -875,19 +924,19 @@ HERO
 }
 
 .hero-tag{
-    font-size:11px;
+    font-size:var(--fs-xs);
     padding:7px 14px;
     margin-bottom:18px;
 }
 
 .hero-content h1{
-    font-size:30px;
+    font-size:var(--fs-display);
     line-height:1.25;
     margin-bottom:18px;
 }
 
 .hero-content p{
-    font-size:15px;
+    font-size:var(--fs-body);
     line-height:1.8;
     margin-bottom:25px;
 }
@@ -896,7 +945,7 @@ HERO
     width:100%;
     justify-content:center;
     padding:14px 20px;
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 .hero-btn i{
@@ -924,7 +973,7 @@ TOP INFO
 .info-left,
 .info-center,
 .info-right{
-    font-size:14px;
+    font-size:var(--fs-xs);
 }
 
 .info-center a,
@@ -937,12 +986,12 @@ ABOUT
 ==========================*/
 
 .section-title{
-    font-size:30px;
+    font-size:var(--fs-h1);
 }
 
 .section-tag{
     padding:10px 18px;
-    font-size:13px;
+    font-size:var(--fs-xs);
 }
 
 .about-btn{
@@ -964,15 +1013,15 @@ FEATURES
 }
 
 .feature-icon i{
-    font-size:28px;
+    font-size:var(--fs-h2);
 }
 
 .feature-content h3{
-    font-size:20px;
+    font-size:var(--fs-h5);
 }
 
 .feature-content p{
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 /*==========================
@@ -984,9 +1033,8 @@ SHOWCASE
 }
 
 .showcase-slide{
-                border-radius:0 0 0 0;
-
-    height: 300px;
+    border-radius:0;
+    height:300px;
 }
 
 .showcase-controls{
@@ -998,11 +1046,11 @@ SHOWCASE
 .showcase-btn{
     width:38px;
     height:38px;
-    font-size:14px;
+    font-size:var(--fs-xs);
 }
 
 .showcase-counter{
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 /*==========================
@@ -1010,11 +1058,11 @@ CTA
 ==========================*/
 
 .cta-left h2{
-    font-size:30px;
+    font-size:var(--fs-h1);
 }
 
 .cta-right p{
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 .cta-btn{
@@ -1027,7 +1075,7 @@ SERVICES
 ==========================*/
 
 .service-tab{
-    font-size:10px;
+    font-size:var(--fs-xs);
     padding:12px 18px;
 }
 
@@ -1041,15 +1089,15 @@ SERVICES
 }
 
 .service-icon i{
-    font-size:24px;
+    font-size:var(--fs-h4);
 }
 
 .service-content h3{
-    font-size:22px;
+    font-size:var(--fs-h4);
 }
 
 .service-content li{
-    font-size:14px;
+    font-size:var(--fs-xs);
     margin-bottom:14px;
 }
 
@@ -1067,7 +1115,7 @@ INDUSTRIES
 ==========================*/
 
 .industry-tag{
-    font-size:14px;
+    font-size:var(--fs-xs);
     gap:10px;
 }
 
@@ -1080,11 +1128,11 @@ COUNTERS
 }
 
 .counter-box h2{
-    font-size:42px;
+    font-size:var(--fs-display);
 }
 
 .counter-box span{
-    font-size:24px;
+    font-size:var(--fs-h4);
 }
 
 /*==========================
@@ -1100,7 +1148,7 @@ MESSAGE
 }
 
 .message-content p{
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 .author-image{
@@ -1109,7 +1157,7 @@ MESSAGE
 }
 
 .author-info h5{
-    font-size:18px;
+    font-size:var(--fs-h6);
 }
 
 /*==========================
@@ -1118,7 +1166,7 @@ FAQ
 
 .faq-question{
     padding:18px;
-    font-size:16px;
+    font-size:var(--fs-body);
 }
 
 .faq-question i{
@@ -1128,7 +1176,7 @@ FAQ
 
 .faq-answer p{
     padding:0 18px 18px;
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 /*==========================
@@ -1169,7 +1217,7 @@ FOOTER
 }
 
 .footer-bottom p{
-    font-size:14px;
+    font-size:var(--fs-xs);
 }
 
 .developer-credit{
@@ -1190,7 +1238,8 @@ SCROLL BUTTON
 .scroll-top-btn{
     width:42px;
     height:42px;
-    font-size:15px;
+    font-size:var(--fs-body);
 }
 
 }
+

@@ -54,6 +54,9 @@ init(){
 
     this.smoothScroll();
 
+    this.whatsappButton();
+
+
     this.resize();
 
 },
@@ -278,6 +281,25 @@ mobileMenu(){
         });
 
     });
+    /*====================================
+        MOBILE DROPDOWN
+====================================*/
+
+document.querySelectorAll(".has-dropdown > a").forEach(link => {
+
+    link.addEventListener("click", function(e){
+
+        if(window.innerWidth <= 991){
+
+            e.preventDefault();
+
+            this.parentElement.classList.toggle("active");
+
+        }
+
+    });
+
+});
 
 },
 
@@ -1552,6 +1574,7 @@ scrollProgress(){
 
 },
 
+
 /*==================================================
     SCROLL REVEAL
 ==================================================*/
@@ -1700,6 +1723,58 @@ smoothScroll(){
 },
 
 /*==================================================
+    WHATSAPP BUTTON
+==================================================*/
+
+whatsappButton(){
+
+    const whatsapp = this.qs(".whatsapp-float");
+
+    if(!whatsapp) return;
+
+    let ticking = false;
+
+    const update = ()=>{
+
+        const scrollTop = window.scrollY;
+
+        whatsapp.classList.toggle(
+
+            "active",
+
+            scrollTop > 300
+
+        );
+
+        ticking = false;
+
+    };
+
+    update();
+
+    window.addEventListener(
+
+        "scroll",
+
+        ()=>{
+
+            if(!ticking){
+
+                requestAnimationFrame(update);
+
+                ticking = true;
+
+            }
+
+        },
+
+        { passive:true }
+
+    );
+
+},
+
+/*==================================================
     RESIZE MANAGER
 ==================================================*/
 
@@ -1817,5 +1892,6 @@ resize(){
         element?.classList.toggle(className);
 
     },
+
 
 };

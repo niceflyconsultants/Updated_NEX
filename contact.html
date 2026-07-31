@@ -421,7 +421,277 @@
 <!--====================================
         CONTACT INFORMATION END
 =====================================-->
+<!--====================================
+        REQUEST A QUOTE START
+=====================================-->
 
+<!--====================================
+        REQUEST A QUOTE START
+=====================================-->
+
+<section class="quote-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                Get Started
+            </span>
+
+            <h2>
+                Request A Quote
+            </h2>
+
+            <p>
+                Complete the form below and our logistics specialists will provide you with the best logistics solution for your shipment.
+            </p>
+
+        </div>
+
+        <form class="quote-form" action="#" method="POST">
+
+            <div class="form-grid">
+
+                <!-- First Name -->
+
+                <div class="form-group">
+                    <label for="firstName">First Name <span>*</span></label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="first_name"
+                        placeholder="First Name"
+                        required>
+                </div>
+
+                <!-- Last Name -->
+
+                <div class="form-group">
+                    <label for="lastName">Last Name <span>*</span></label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="last_name"
+                        placeholder="Last Name"
+                        required>
+                </div>
+
+                <!-- Company -->
+
+                <div class="form-group">
+                    <label for="company">Company <span>*</span></label>
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        placeholder="Company"
+                        required>
+                </div>
+
+                <!-- Email -->
+
+                <div class="form-group">
+                    <label for="email">Email Address <span>*</span></label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email Address"
+                        required>
+                </div>
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label>Phone Number <span>*</span></label>
+
+                    <div class="phone-group">
+
+                        <select name="country_code" required>
+
+                            <option value="+966">🇸🇦 +966</option>
+                            <option value="+971">🇦🇪 +971</option>
+                            <option value="+973">🇧🇭 +973</option>
+                            <option value="+974">🇶🇦 +974</option>
+                            <option value="+965">🇰🇼 +965</option>
+                            <option value="+968">🇴🇲 +968</option>
+
+                        </select>
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Phone Number"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Service -->
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Service Required <span>*</span>
+                    </label>
+
+                    <select
+                        id="service"
+                        name="service"
+                        required>
+
+                        <option value="" selected disabled>
+                            Select Service
+                        </option>
+
+                        <option>Freight Forwarding</option>
+                        <option>Road Transportation</option>
+                        <option>Ocean Freight</option>
+                        <option>Air Freight</option>
+                        <option>Warehousing</option>
+                        <option>Project Cargo</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Purpose -->
+
+                <div class="form-group">
+
+                    <label for="purpose">
+                        Purpose
+                    </label>
+
+                    <select
+                        id="purpose"
+                        name="purpose">
+
+                        <option value="" selected disabled>
+                            Select Purpose
+                        </option>
+
+                        <option>Commercial</option>
+                        <option>Personal</option>
+
+                    </select>
+
+                </div>
+
+                <!-- From -->
+
+                <div class="form-group">
+
+                    <label for="from">
+                        From Location <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="from"
+                        name="from_location"
+                        placeholder="Origin"
+                        required>
+
+                </div>
+
+                <!-- To -->
+
+                <div class="form-group">
+
+                    <label for="to">
+                        To Location <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="to"
+                        name="to_location"
+                        placeholder="Destination"
+                        required>
+
+                </div>
+
+                <!-- Goods Weight -->
+
+                <div class="form-group full-width">
+
+                    <label for="weight">
+                        Goods Weight <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="weight"
+                        name="goods_weight"
+                        placeholder="Example: 250 KG"
+                        required>
+
+                </div>
+
+                <!-- Message -->
+
+                <div class="form-group full-width">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us about your shipment..."></textarea>
+
+                </div>
+
+            </div>
+
+            <!-- Google reCAPTCHA -->
+
+            <div class="captcha-box">
+
+                <!-- Replace YOUR_SITE_KEY -->
+
+                <div
+                    class="g-recaptcha"
+                    data-sitekey="YOUR_SITE_KEY">
+                </div>
+
+            </div>
+
+            <button
+                type="submit"
+                class="track-btn">
+
+                Submit Request
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!--====================================
+        REQUEST A QUOTE END
+=====================================-->
+
+<!-- Google reCAPTCHA -->
+<script
+    src="https://www.google.com/recaptcha/api.js"
+    async
+    defer>
+</script>
+<!--====================================
+        REQUEST A QUOTE END
+=====================================-->
 
 
 <!--====================================
@@ -883,6 +1153,7 @@
 =====================================-->
 
 <div id="scrollProgress" class="scroll-progress">
+    
 
     <svg class="progress-ring" width="70" height="70">
 
@@ -912,6 +1183,23 @@
 
 <!--====================================
         SCROLL PROGRESS END
+=====================================-->
+<!--====================================
+        FLOATING WHATSAPP
+=====================================-->
+
+<a href="https://wa.me/966549563564"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!--====================================
+        FLOATING WHATSAPP END
 =====================================-->
 
 

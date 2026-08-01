@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | NEX Logistics International</title>
+
+    <meta name="description"
+          content="Thank you for contacting NEX Logistics International. Our logistics specialists will contact you shortly.">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+
+        body{
+
+            margin:0;
+            font-family:'Poppins',sans-serif;
+
+            background:
+            linear-gradient(rgba(7,18,36,.92),rgba(7,18,36,.92)),
+            url("images/freight-forwarding-hero.jpeg") center/cover;
+
+            color:#fff;
+
+        }
+
+        .thank-you{
+
+            min-height:100vh;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            text-align:center;
+
+            padding:40px 20px;
+
+        }
+
+        .thank-card{
+
+            max-width:760px;
+
+            width:100%;
+
+            background:rgba(255,255,255,.08);
+
+            backdrop-filter:blur(18px);
+
+            border:1px solid rgba(255,255,255,.15);
+
+            border-radius:30px;
+
+            padding:60px 50px;
+
+        }
+
+        .success-icon{
+
+            width:110px;
+            height:110px;
+
+            margin:0 auto 35px;
+
+            border-radius:50%;
+
+            background:#22c55e;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            font-size:50px;
+
+            animation:pop .6s ease;
+
+        }
+
+        @keyframes pop{
+
+            0%{
+                transform:scale(.4);
+                opacity:0;
+            }
+
+            100%{
+                transform:scale(1);
+                opacity:1;
+            }
+
+        }
+
+        h1{
+
+            color:#fff;
+
+            font-size:40px;
+
+            margin-bottom:20px;
+
+        }
+
+        p{
+
+            color:rgba(255,255,255,.85);
+
+            line-height:1.9;
+
+            font-size:14px;
+
+            margin-bottom:18px;
+
+        }
+
+
+        .buttons{
+
+            display:flex;
+
+            justify-content:center;
+
+            gap:20px;
+
+            flex-wrap:wrap;
+
+            margin-top:40px;
+
+        }
+
+        .countdown{
+
+            margin-top:35px;
+
+            color:#9ec8ff;
+
+            font-size:15px;
+
+        }
+
+        @media(max-width:768px){
+
+            .thank-card{
+
+                padding:30px 20px;
+
+            }
+
+            h1{
+
+                font-size:30px;
+
+            }
+
+            p{
+
+                font-size:14px;
+
+            }
+
+            .buttons{
+
+                flex-direction:column;
+
+            }
+
+            .buttons a{
+
+                width:100%;
+
+                justify-content:center;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<section class="thank-you">
+
+    <div class="thank-card">
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+        <h1>Thank You!</h1>
+
+        <p>
+
+            Your quote request has been submitted successfully.
+
+        </p>
+
+        <p>
+
+            One of our logistics specialists will review your request and contact you as soon as possible.
+
+        </p>
+
+
+        <div class="buttons">
+
+            <a href="index.html" class="track-btn">
+
+                Back to Home
+
+                <i class="fa-solid fa-house"></i>
+
+            </a>
+
+            <a href="contact.html" class="primary-btn">
+
+                Contact Us
+
+                <i class="fa-solid fa-headset"></i>
+
+            </a>
+
+        </div>
+
+        <p class="countdown">
+
+            Redirecting to Home in
+            <span id="timer">10</span>
+            seconds...
+
+        </p>
+
+    </div>
+
+</section>
+
+<script>
+
+let seconds = 10;
+
+const timer = document.getElementById("timer");
+
+const interval = setInterval(() => {
+
+    seconds--;
+
+    timer.textContent = seconds;
+
+    if(seconds <= 0){
+
+        clearInterval(interval);
+
+        window.location.href = "index.html";
+
+    }
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
